@@ -4,16 +4,42 @@
     <title>Debugging Win7 Font Loading Failure</title>
     <style>
     @font-face {
-      font-family: 'Base v141';
+      font-family: 'Web v141';
       font-style: normal;
       font-weight: 400;
       src: url(v141.otf) format('opentype');
     }
     @font-face {
-      font-family: 'Base v142';
+      font-family: 'Web v142';
       font-style: normal;
       font-weight: 400;
       src: url(v142.otf) format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Original v141';
+      font-style: normal;
+      font-weight: 400;
+      src: url(original-v141.otf) format('opentype');
+    }
+    @font-face {
+      font-family: 'Original v142';
+      font-style: normal;
+      font-weight: 400;
+      src: url(original-v142.otf) format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Original HB v141';
+      font-style: normal;
+      font-weight: 400;
+      src: url(original-hb-v141.otf) format('opentype');
+    }
+    @font-face {
+      font-family: 'Original HB v142';
+      font-style: normal;
+      font-weight: 400;
+      src: url(original-hb-v142.otf) format('opentype');
     }
 
     @font-face {
@@ -43,11 +69,26 @@
       src: url(v142-ft-hb.otf) format('opentype');
     }
 
-    span.base_141 {
-      font-family: "Base v141";
+    span.web_141 {
+      font-family: "Web v141";
     }
-    span.base_142 {
-      font-family: "Base v142";
+    span.web_142 {
+      font-family: "Web v142";
+    }
+
+
+    span.original_141 {
+      font-family: "Original v141";
+    }
+    span.original_142 {
+      font-family: "Original v142";
+    }
+
+    span.original_hb_141 {
+      font-family: "Original HB v141";
+    }
+    span.original_hb_142 {
+      font-family: "Original HB v142";
     }
 
     span.ft_141 {
@@ -63,7 +104,7 @@
     span.ft_hb_142 {
       font-family: "FT HB v142";
     }
-    
+
     span {
       font-weight: normal;
       font-style: normal;
@@ -81,14 +122,25 @@
     </style>
   </head>
   <body>
-    base 141: <span class="base_141">home logout</span><br/>
-    base 142: <span class="base_142">home logout</span><br/>
+    web 141: <span class="web_141">home logout</span><br/>
+    web 142: <span class="web_142">home logout</span><br/>
     <br/>
+
+    original 141: <span class="original_141">home logout</span><br/>
+    original 142: <span class="original_142">home logout</span><br/>
+    <br/>
+
+    original hb 141: <span class="original_hb_141">home logout</span><br/>
+    original hb 142: <span class="original_hb_142">home logout</span><br/>
+    <br/>
+    
     ft 141: <span class="ft_141">home logout</span><br/>
     ft 142: <span class="ft_142">home logout</span><br/>
     <br/>
+    
     ft hb 141: <span class="ft_hb_141">home logout</span><br/>
     ft hb 142: <span class="ft_hb_142">home logout</span><br/>
     <br/>
+    
   </body>
 </html>
